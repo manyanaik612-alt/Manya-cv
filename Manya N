@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manya N | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header / Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-xl font-bold text-indigo-600 tracking-tight">MANYA N</span>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+                <a href="#projects" class="hover:text-indigo-600 transition">Certificates</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 gradient-bg text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Manya N</h1>
+            <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-8">
+                Aspiring programmer with a focus on Electronics and Communication. Responsible, dedicated, and ready to contribute to innovative projects.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:manyanaik612@gmail.com" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold flex items-center gap-2 shadow-lg hover:bg-slate-100 transition">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <div class="bg-indigo-700/30 border border-white/20 px-6 py-3 rounded-full font-medium flex items-center gap-2">
+                    <i class="fas fa-phone"></i> 7619492970
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-24">
+
+        <!-- About Section -->
+        <section id="about" class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-indigo-600"></span> About Me
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    I consider myself a responsible person with a deep interest in programming. Currently, I am looking forward to gaining my first work experience where I can apply my skills and learn from industry professionals. I am passionate about technology and how it solves real-world problems.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="text-xl font-bold mb-4">Core Competencies</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <i class="fas fa-check-circle text-indigo-500"></i> Responsibility & Ethics
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <i class="fas fa-check-circle text-indigo-500"></i> Technical Problem Solving
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <i class="fas fa-check-circle text-indigo-500"></i> Quick Learner
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-700">
+                        <i class="fas fa-check-circle text-indigo-500"></i> Communication Skills
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm card-hover text-center">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Programming</h3>
+                    <p class="text-slate-500">C and C++</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm card-hover text-center">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Web Development</h3>
+                    <p class="text-slate-500">HTML5</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm card-hover text-center">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-database text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Databases</h3>
+                    <p class="text-slate-500">SQL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="text-3xl font-bold mb-10">Education</h2>
+            <div class="space-y-8 border-l-2 border-slate-200 ml-4 pl-8">
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white"></div>
+                    <h3 class="text-xl font-bold">St Aloysius (Deemed to be University)</h3>
+                    <p class="text-indigo-600 font-medium">B.Tech in Electronics and Communication</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white"></div>
+                    <h3 class="text-xl font-bold">St Agnes PU College</h3>
+                    <p class="text-slate-500">Pre-University Education • <span class="text-indigo-600 font-semibold">89%</span></p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-indigo-600 rounded-full border-4 border-white"></div>
+                    <h3 class="text-xl font-bold">St Joseph High School</h3>
+                    <p class="text-slate-500">High School • <span class="text-indigo-600 font-semibold">89.44%</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Certificates -->
+        <section id="projects">
+            <h2 class="text-3xl font-bold mb-10">Certificates & Projects</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-900 text-white p-6 rounded-xl card-hover">
+                    <div class="text-indigo-400 mb-4"><i class="fas fa-robot text-3xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">AI For ALL</h3>
+                    <p class="text-slate-400 text-sm">Foundational certification in Artificial Intelligence concepts.</p>
+                </div>
+                <div class="bg-slate-900 text-white p-6 rounded-xl card-hover">
+                    <div class="text-purple-400 mb-4"><i class="fas fa-brain text-3xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Generative AI For ALL</h3>
+                    <p class="text-slate-400 text-sm">Specialized training in Generative AI technologies and applications.</p>
+                </div>
+                <div class="bg-slate-900 text-white p-6 rounded-xl card-hover">
+                    <div class="text-blue-400 mb-4"><i class="fas fa-microchip text-3xl"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Electronics Course</h3>
+                    <p class="text-slate-400 text-sm">In-depth study of electronic circuits and components.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-indigo-600 mb-6">Let's Connect</h2>
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="mailto:manyanaik612@gmail.com" class="text-slate-500 hover:text-indigo-600 transition text-2xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:7619492970" class="text-slate-500 hover:text-indigo-600 transition text-2xl">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            <p class="text-slate-400 text-sm">© 2024 Manya N. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
